@@ -1,0 +1,24 @@
+# curl -i -X GET http://localhost:8080/api/public
+GET http://localhost:8080/api/public
+Accept: text/plain
+
+###
+
+# curl -i -X GET http://localhost:8080/api/admin
+GET http://localhost:8080/api/admin
+Accept: text/plain
+
+###
+
+# curl -i -X GET -u admin:admin http://localhost:8080/api/admin
+GET http://localhost:8080/api/admin
+Authorization: Basic admin admin
+
+###
+
+# curl -i -X GET -u user:user http://localhost:8080/api/users/me
+GET http://localhost:8080/api/users/me
+Authorization: Basic user user
+
+###
+
