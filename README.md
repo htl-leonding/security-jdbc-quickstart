@@ -4,6 +4,18 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
+## Running the application as jar file
+
+Unfortunately the security is in dev-mode not working.
+
+We skip the tests when compiling the jar.
+
+```
+mvn -Dmaven.test.skip=true install
+java -jar ./target/security-jdbc-quickstart-1.0-SNAPSHOT-runner.jar
+```
+
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
